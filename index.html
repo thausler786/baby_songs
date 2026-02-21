@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Songs for Babies</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Songs for Babies</h1>
+            <p class="subtitle">A collection of lullabies from friends and family</p>
+        </header>
+
+        <main>
+            <div id="song-list" class="song-list">
+                <!-- Songs will be populated by JavaScript -->
+            </div>
+
+            <div id="now-playing" class="now-playing hidden">
+                <span id="now-playing-text"></span>
+            </div>
+        </main>
+
+        <audio id="audio-player"></audio>
+    </div>
+
+    <script src="songs.js"></script>
+</body>
+</html>
