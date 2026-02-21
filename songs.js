@@ -1,17 +1,11 @@
 // Song data - add your songs here!
 // Each song needs: title, singer, and audioUrl (path to the MP3 file in the audio folder)
 const songs = [
-    // Example entries (uncomment and modify when you have actual songs):
-    // {
-    //     title: "Twinkle Twinkle Little Star",
-    //     singer: "Aunt Sarah",
-    //     audioUrl: "audio/twinkle.mp3"
-    // },
-    // {
-    //     title: "Rock-a-Bye Baby",
-    //     singer: "Uncle Mike",
-    //     audioUrl: "audio/rock-a-bye.mp3"
-    // },
+    {
+        title: "Love is Little",
+        singer: "Tim Hausler",
+        audioUrl: "audio/Love is Little.m4a"
+    },
 ];
 
 // Player logic
