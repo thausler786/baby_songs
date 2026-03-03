@@ -31,6 +31,11 @@ const songs = [
         singer: "Kunsel Tenzin",
         audioUrl: "audio/kunsel song.m4a"
     },
+    {
+        title: "Edelweiss",
+        singer: "Shivani Srivastav",
+        audioUrl: "audio/Edelweiss for Kate.m4a"
+    },
 ];
 
 // Player logic
