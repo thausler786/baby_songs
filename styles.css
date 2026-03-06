@@ -6,7 +6,7 @@
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
-    background-color: #fafafa;
+    background: linear-gradient(135deg, #f3e5f5 0%, #ede7f6 50%, #e8eaf6 100%);
     color: #333;
     line-height: 1.6;
     min-height: 100vh;
@@ -26,12 +26,12 @@ header {
 h1 {
     font-size: 2rem;
     font-weight: 600;
-    color: #2c3e50;
+    color: #7b1fa2;
     margin-bottom: 0.5rem;
 }
 
 .subtitle {
-    color: #666;
+    color: #9c27b0;
     font-size: 1rem;
 }
 
@@ -43,23 +43,26 @@ h1 {
 }
 
 .song-card {
-    background: white;
-    border-radius: 8px;
+    background: linear-gradient(135deg, #ffffff 0%, #fafafa 100%);
+    border-radius: 16px;
     padding: 1rem 1.25rem;
     display: flex;
     align-items: center;
     gap: 1rem;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.2s ease;
+    box-shadow: 0 4px 15px rgba(156, 39, 176, 0.15);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
 }
 
 .song-card:hover {
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 6px 20px rgba(156, 39, 176, 0.25);
+    border-color: #ce93d8;
+    transform: translateY(-2px);
 }
 
 .song-card.playing {
-    background: #e8f4fd;
-    border-left: 3px solid #3498db;
+    background: linear-gradient(135deg, #faf5ff 0%, #f3e5f5 100%);
+    border-color: #ab47bc;
 }
 
 .play-button {
@@ -67,18 +70,20 @@ h1 {
     height: 44px;
     border-radius: 50%;
     border: none;
-    background: #3498db;
+    background: linear-gradient(135deg, #ab47bc 0%, #8e24aa 100%);
     color: white;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
-    transition: background 0.2s ease;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(156, 39, 176, 0.4);
 }
 
 .play-button:hover {
-    background: #2980b9;
+    background: linear-gradient(135deg, #ba68c8 0%, #ab47bc 100%);
+    transform: scale(1.05);
 }
 
 .play-button:active {
@@ -109,7 +114,7 @@ h1 {
 
 .song-title {
     font-weight: 500;
-    color: #2c3e50;
+    color: #9c27b0;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -125,7 +130,7 @@ h1 {
     bottom: 0;
     left: 0;
     right: 0;
-    background: #2c3e50;
+    background: linear-gradient(135deg, #9c27b0 0%, #7b1fa2 100%);
     color: white;
     padding: 0.75rem 1rem;
     text-align: center;
