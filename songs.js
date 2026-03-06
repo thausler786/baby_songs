@@ -164,5 +164,16 @@ progressSlider.addEventListener('change', () => {
     isSeeking = false;
 });
 
+// Handle direct clicks on the progress bar (fixes click-to-seek on some browsers)
+progressSlider.addEventListener('click', (e) => {
+    const rect = progressSlider.getBoundingClientRect();
+    const percent = ((e.clientX - rect.left) / rect.width) * 100;
+    progressSlider.value = percent;
+    if (audioPlayer.duration) {
+        audioPlayer.currentTime = (percent / 100) * audioPlayer.duration;
+        currentTimeEl.textContent = formatTime(audioPlayer.currentTime);
+    }
+});
+
 // Initialize
 renderSongs();
