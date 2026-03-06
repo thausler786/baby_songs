@@ -36,6 +36,11 @@ const songs = [
         singer: "Shivani Srivastav",
         audioUrl: "audio/Edelweiss for Kate.m4a"
     },
+    {
+        title: "Goodnight Baby",
+        singer: "Jackie Elm & Kate Beck",
+        audioUrl: "audio/Goodnight Baby.m4a"
+    },
 ];
 
 // Player logic
